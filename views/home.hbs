@@ -1,0 +1,28 @@
+    <section id="section_one">
+        <div class="fav_info">
+            <h1 class="header_one">My three Favourite thing to do</h1>
+            <p>There are certain things that you do and feel reborn. These are my favourite things to do</p>
+        </div>
+    </section>
+
+
+    <section id="main_info">
+        
+        <div class="info">
+        {{#each team}}
+        <div class="info-panel">
+            <img src="images/{{ Image }}" alt="image">
+
+            <a class="u-link" href="{{ ID }}">View More</a>
+
+            <h1>{{ Title }}</h1>
+            <h3{{ Description }}></h3>
+            <h4>{{ Favourite }}</h4>
+
+        </div>
+          
+        </div>
+
+        {{/each}}
+    </section>
+
