@@ -16,7 +16,7 @@ app.use('/', require('./routes/index'));
 app.use((req, res, next) => {
     var err = new Error('Not Found');
     err.status = 404;
-    err.customMessage = "You freaking dummy!";
+    err.customMessage = "Cannot find what you are looking for!";
 
     next(err);
 })
@@ -30,19 +30,3 @@ app.listen(port, () => {
 })
 
 
-// app.get('/', function (req, res) {
-//     pool.query('SELECT * FROM tbl_info', function (error, results, fields) {
-//     if (error) throw error;
-//     console.log(results);
-
-//     res.render('home', {
-//         Soccer: results[0],
-//         Music: results[1],
-//         Weed: results[2]
-//     })
-//     });
-//   })
-
-//   app.get('/*', function (req, res) {
-//     res.render('err');;
-//   })
